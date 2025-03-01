@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Student Registration Form</h1>
+        <form action="#" method="post">
+            <!-- Personal Information -->
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required>
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                    <option value="preferNotToSay">Prefer not to say</option>
+                </select>
+
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" required></textarea>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </fieldset>
+
+            <!-- Guardian Information -->
+            <fieldset>
+                <legend>Guardian Information</legend>
+                <label for="guardianName">Guardian Name:</label>
+                <input type="text" id="guardianName" name="guardianName">
+
+                <label for="relationship">Relationship to Student:</label>
+                <input type="text" id="relationship" name="relationship">
+
+                <label for="guardianPhone">Guardian Phone Number:</label>
+                <input type="tel" id="guardianPhone" name="guardianPhone">
+
+                <label for="guardianEmail">Guardian Email Address:</label>
+                <input type="email" id="guardianEmail" name="guardianEmail">
+            </fieldset>
+
+            <!-- Education Information -->
+            <fieldset>
+                <legend>Education Information</legend>
+                <label for="grade">Grade/Level of Study:</label>
+                <input type="text" id="grade" name="grade" required>
+
+                <label for="school">School Name:</label>
+                <input type="text" id="school" name="school">
+
+                <label for="previousSchool">Previous School Name (if transferring):</label>
+                <input type="text" id="previousSchool" name="previousSchool">
+
+                <label for="subjects">Subjects of Interest:</label>
+                <input type="text" id="subjects" name="subjects">
+            </fieldset>
+
+            <!-- Health Information -->
+            <fieldset>
+                <legend>Health Information</legend>
+                <label for="medicalConditions">Any Medical Conditions/Allergies?</label>
+                <input type="text" id="medicalConditions" name="medicalConditions">
+
+                <label for="emergencyContact">Emergency Contact Name:</label>
+                <input type="text" id="emergencyContact" name="emergencyContact" required>
+
+                <label for="emergencyPhone">Emergency Contact Phone Number:</label>
+                <input type="tel" id="emergencyPhone" name="emergencyPhone" required>
+            </fieldset>
+
+            <!-- Parental/Guardian Consent -->
+            <fieldset>
+                <legend>Parental/Guardian Consent</legend>
+                <label for="permission">I give permission for my child to participate in school activities and events:</label>
+                <input type="checkbox" id="permission" name="permission" required> Yes
+            </fieldset>
+
+            <!-- Signature -->
+            <fieldset>
+                <legend>Signature</legend>
+                <label for="signature">Signature of Student:</label>
+                <input type="text" id="signature" name="signature" required>
+
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+            </fieldset>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+</body>
+</html>
+
